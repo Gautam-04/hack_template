@@ -1,0 +1,135 @@
+/* General form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in-out;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007a05;
+}
+
+/* Submit button */
+form button {
+    padding: 12px 30px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.15rem;
+    background-color: #99fc76;
+    color: black;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #007a05;
+    color: white;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Social login section */
+.social-login {
+    text-align: center;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.google {
+    form button {
+        padding: 12px 30px;
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1.15rem;
+        background-color: #fff !important;
+        border: 1px solid #ccc;
+        color: black;
+        transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+.google:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #000;
+}
+
+
+/* Password field container */
+.password-input-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Ensure password input does not get squeezed */
+.password-input-container input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+/* Password toggle icon */
+.toggle-password-icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    transition: color 0.2s ease-in-out;
+}
+
+.toggle-password-icon:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    input {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    form button {
+        font-size: 1rem;
+        height: 45px;
+    }
+
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
